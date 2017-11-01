@@ -3,7 +3,7 @@ package io.github.yexiaoxiaogo.collection.hashset;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class HashSet1 {
+public class HashSet1_4 {
 	public static void main(String[] args) {
 		HashSet<String> hashset = new HashSet<>();
 		hashset.add("a");
@@ -19,5 +19,8 @@ public class HashSet1 {
 		}
 		// 3 hashset size
 		System.out.println(hashset.size());
+		// 4
+		hashset.removeAll(hashset);
+		System.out.println(hashset);
 	}
 }
