@@ -11,6 +11,7 @@ public class HashMap1_2 {
 		hashMap.put(3, "c");
 		hashMap.put(4, "d");
 		hashMap.put(5, "e");
+		System.out.println(hashMap);
 		for (Map.Entry x : hashMap.entrySet()) {
 			System.out.println(x.getKey() + ":" + x.getValue());
 		}
