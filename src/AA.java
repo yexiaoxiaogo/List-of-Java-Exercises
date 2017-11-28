@@ -1,9 +1,15 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class AA {
 	public static void main(String[] args) {
-		String str1 = "hello";
-		String str2 = "he" + new String("llo");
-		System.err.println(str1 == str2);
+		List<List<String>> fatherlist = new LinkedList<>();
+		List<String> childlist = new ArrayList<>();
+		childlist.add("before");
+		fatherlist.add(childlist);
+		childlist.add("after");
+		System.out.println(fatherlist);
 
 	}
 
